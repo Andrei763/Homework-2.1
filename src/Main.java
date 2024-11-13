@@ -3,14 +3,19 @@
 public class Main {
     public static void main(String[] args) {
         int intialBalance = 100;
-        int addend = 1200;
-        int bonus = 0;
+        int addend = 999;
+        int bonus;
 
-        if (addend > 1000) {
+        if (addend >= 1000) {
             bonus = addend / 100;
-            int Finalbalance = intialBalance + addend + bonus;
-            System.out.println("Бонус:" + bonus);
-            System.out.println("Итоговый баланс:" + Finalbalance);
+            int amount1;
+            amount1 = (intialBalance + addend + bonus);
+            System.out.println("Бонус равен:" + bonus + ", Итоговая сумма:" + amount1);
+        } else {
+            int amount2;
+            amount2 = (intialBalance + addend);
+            System.out.println("Бонусов нет, итоговая сумма:" + amount2);
+
         }
     }
 }
